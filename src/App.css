@@ -17,12 +17,11 @@
   background-size: cover;
   margin-bottom: 0px !important;
 }
-.page1{
-  background: url('./assets/images/page1/img1.jpg');
+.team{
+  background: url('./assets/images/team/banner.jpg');
   background-size: cover;
   padding: 10em !important;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -47,66 +46,20 @@
   }
 }
 
-.homeslider img{
-	height: 100vh;
-}
-.img-thumbnail {
-  padding: .25rem;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
-  border-radius: .25rem;
-  max-width: 100%;
-  width:100%;
-}
 
-.social-link {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666;
-  border-radius: 50%;
-  transition: all 0.3s;
-  font-size: 0.9rem;
-}
-
-.img-hover-zoom--quick-zoom {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  margin: auto;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  position: relative;
-  z-index: 1;
-  -moz-box-shadow: 0 5px 30px 0 rgba(214, 215, 216, 0.57);
-  -webkit-box-shadow: 0 5px 30px 0 rgba(214, 215, 216, 0.57);
-  -o-box-shadow: 0 5px 30px 0 rgba(214, 215, 216, 0.57);
-  box-shadow: 0 5px 30px 0 rgba(214, 215, 216, 0.57);
-  transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -ms-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-}
-
-/* The Transformation */
-.img-hover-zoom--quick-zoom:hover img {
-  /* transform: scale(1.08); */
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-hr.dashed { 
+hr.dashed {
   /* border-top: 2px dashed #999; */
-  /* background: url('./assets/images/home/divider.png');
-  background-position: center; */
 }
 .subcardimg img {height: 35vh;}
 #multi-item-example .carousel-indicators li {background-color: #666;}
+.homeslider img{
+	height: 100vh;
+}
+.carrier{
+  background :url('./assets/images/team/banner.jpg');
+}
+.electrical{
+  background: url("./assets/images/project/ebanner.jpg");
+  background-size: cover;
+  padding: 10em !important;
+}

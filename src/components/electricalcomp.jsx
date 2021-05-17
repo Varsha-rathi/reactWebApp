@@ -1,7 +1,7 @@
 import React from 'react';
 import { Jumbotron, Container, Row, Col, Card, Carousel } from 'react-bootstrap';
 import { Transition } from 'react-transition-group';
-import { elecomp , batteries, elecompaccess} from '../constants/subsystems';
+import { elecomp , batteries, elecompaccess,pcb} from '../constants/subsystems';
 
 class Electricalcomp extends React.Component {
     render() {
@@ -19,7 +19,7 @@ class Electricalcomp extends React.Component {
 
         return (
             <div>
-                <Jumbotron fluid className="page1">
+                <Jumbotron fluid className="electrical">
                     <Container className="text-center">
                         <Transition in={true} timeout={duration} appear>
                             {(state) => (
@@ -47,7 +47,7 @@ class Electricalcomp extends React.Component {
                                                 transition: `900ms ease-in`
                                             }}>
                                                 <div className="bg-white rounded shadow-sm py-3 px-4 mb-4">
-                                                    <h6 class="text-center text-uppercase">Microcontroller </h6>
+                                                    <h4 class="text-center text-uppercase">Microcontroller </h4>
                                                     <hr class="dashed"></hr>
                                                     <Row>
                                                     
@@ -55,10 +55,10 @@ class Electricalcomp extends React.Component {
                                                                 <Row className="border m-2 p-4">
                                                                     <Col xs={8}>
                                                                         <h5>Arduino nano</h5>
-                                                                        This servo motor will be used to release the payload from the carrier, release the heatshield from the payload and to also deploy the parachute. Also, it will be used to control the tail of the carrier to change directions and perform helical manoeuvre.
+                                                                        The Arduino Nano is a small, complete, and breadboard-friendly board based on the ATmega328 (Arduino Nano 3.x). It has more or less the same functionality of the Arduino Duemilanove, but in a different package. It lacks only a DC power jack, and works with a Mini-B USB cable instead of a standard one.
                                                                     </Col>
                                                                     <Col xs={4}>
-                                                                        <img src={'./assets/images/home/2.jpg'}/>
+                                                                        <img src={'./assets/images/project/arduino.jpg'}/>
                                                                     </Col>
                                                                     
                                                                 </Row>
@@ -67,7 +67,7 @@ class Electricalcomp extends React.Component {
                                                 </div>
                                             
                                                 <div className="bg-white rounded shadow-sm py-3 px-4 mb-4">
-                                                    <h6 class="text-center text-uppercase">Sensor Subsystem</h6>
+                                                    <h4 class="text-center text-uppercase">Sensor Subsystem</h4>
                                                     <hr class="dashed"></hr>
                                                     <Carousel id="multi-item-example">
                                                     
@@ -93,7 +93,7 @@ class Electricalcomp extends React.Component {
                                                 </div>
                                                 
                                                 <div className="bg-white rounded shadow-sm py-3 px-4 mb-4">
-                                                    <h6 class="text-center text-uppercase">Batteries </h6>
+                                                    <h4 class="text-center text-uppercase">Batteries </h4>
                                                     <hr class="dashed"></hr>
                                                     <Row>
                                                     {
@@ -122,7 +122,7 @@ class Electricalcomp extends React.Component {
                                                 </div>
                                             
                                                 <div className="bg-white rounded shadow-sm py-3 px-4 mb-4">
-                                                    <h6 class="text-center text-uppercase">Accessories</h6>
+                                                    <h4 class="text-center text-uppercase">Actuator</h4>
                                                     <hr class="dashed"></hr>
                                                     <Row>
                                                     {
@@ -140,6 +140,26 @@ class Electricalcomp extends React.Component {
                                                     }
                                                     </Row>
                                                 </div>
+                                                <div className="bg-white rounded shadow-sm py-3 px-4 mb-4">
+                                                    <h4 class="text-center text-uppercase">PCB design</h4>
+                                                    <hr class="dashed"></hr>
+                                                    <Row>
+                                                    {
+                                                        pcb.map((link) =>
+                                                            <Col xs={6} className="mb-3 d-flex" noGutters={true}>
+                                                                <Card className="flex-fill subcardimg">
+                                                                    <Card.Img variant="top" src={link.icon} className="img-fluid"/>
+                                                                    <Card.Body>
+                                                                        <Card.Title className="text-center">{link.name}</Card.Title>
+                                                                    </Card.Body>
+                                                                </Card>
+                                                            </Col>
+                                                        )
+                                                    }
+                                                    </Row>
+                                                </div>
+
+                                                
                                                
                                             </Col>
                                         )}

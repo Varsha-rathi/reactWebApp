@@ -2,44 +2,43 @@ import React from 'react';
 import {Carousel, Jumbotron, Container, Row, Col} from 'react-bootstrap';
 
 import { Transition } from 'react-transition-group';
-
-class Landing extends React.Component {
+class Mission extends React.Component {
     render() {
         const defaultStyle = {
             opacity: 0
         };
     
         const transitionStyles = {
-            entering: { opacity: 0},
-            entered: { opacity: 1}
+            entering: { opacity: 0,top: "0px"},
+            entered: { opacity: 1, top: "5%"}
         };
         return (
             <div>
-                <Carousel className="homeslider">
-                    <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={'assets/images/home/rocket1.jpg'}
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={'assets/images/home/rocket-launch-693192_1280.jpg'}
-                        alt="Second slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-                <Jumbotron fluid className="mission">
+                <Jumbotron fluid className="team">
+                    <Container className="text-center">
+                        <Transition in={true} timeout={duration} appear>
+                            {(state) => (
+                                <div
+                                    style={{
+                                        ...defaultStyle,
+                                        ...transitionStyles[state]
+                                    }}
+                                >
+                                    <h3>Meet Our Team</h3>
+                                    
+                                </div>
+                            )}
+                        </Transition>
+                        <br />
+                    </Container>
+                </Jumbotron>
+                <Container>
+                        <Teamview />
+                </Container>
+            </div>
+            <div>
+            <Jumbotron fluid className="mission">
+
                     <Container className="text-center">
                     <Row>
                         <Col>
@@ -68,9 +67,8 @@ class Landing extends React.Component {
                     </Container>
 
                 </Jumbotron>
-                
-            </div>
+                </div>
         );
     }
 }
-export default Landing;
+export default Mission;
