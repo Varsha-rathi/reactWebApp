@@ -4,7 +4,6 @@ import {probedata} from "../constants/subsytemlist";
 
 class Probe extends React.Component {
     render() {
-        <h1 class="text-center text-uppercase">Probe</h1>
         const list = probedata.map((link) =>
             <Col xs={12} className="mb-3">
                 <Card>
@@ -22,6 +21,7 @@ class Probe extends React.Component {
 
         return (
             <Row>
+            <h1 class="text-center text-uppercase">Probe</h1>
                 {list}
             </Row>
         );
