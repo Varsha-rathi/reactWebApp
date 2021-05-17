@@ -63,3 +63,10 @@ hr.dashed {
   background-size: cover;
   padding: 10em !important;
 }
+
+.para {text-align: justify;}
+.mission {
+  background: url("./assets/images/mission/banner.jpg");
+  background-size: cover;
+  padding: 30vh !important;
+}
