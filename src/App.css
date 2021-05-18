@@ -80,3 +80,7 @@ hr.dashed {
   background-size: cover;
   padding: 30vh !important;
 }
+.videocs {
+  height: 55%;
+  width: 100%;
+}
