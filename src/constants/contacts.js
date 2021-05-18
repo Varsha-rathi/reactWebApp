@@ -6,7 +6,7 @@ const members=[
             {
                 name: "Utkarsh Pathariya",
                 number:"9619721134",
-                img:"assets/images/home/c1.jpg"
+                img:"assets/images/home/m1.jpeg"
             },
             {
                 name: "Kinit Sai",
@@ -37,7 +37,7 @@ const members=[
             {
                 name: "Mansha Gandhi",
                 number:"7720891313",
-                img:"assets/images/home/c1.jpg"
+                img:"assets/images/home/c2.jpeg"
             }
         ]
     },
