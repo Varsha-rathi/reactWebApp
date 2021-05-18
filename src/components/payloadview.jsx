@@ -1,10 +1,7 @@
 import React from 'react';
-import { Jumbotron, Container } from 'react-bootstrap';
+import { Jumbotron, Container, Row, Col } from 'react-bootstrap';
 import { Transition } from 'react-transition-group';
-import Probe from './probe';
-import Heat from "./heat";
-
-
+import { science, heatsh, probe} from '../constants/science';
 
 class Carrierview extends React.Component {
     render() {
@@ -39,7 +36,7 @@ class Carrierview extends React.Component {
                                 </div>
                             )}
                         </Transition>
-                        
+
                         <br />
 
                     </Container>
@@ -47,13 +44,73 @@ class Carrierview extends React.Component {
 
                 </Jumbotron>
                 <Container>
-                <Probe />
-                <Heat />
+                    <h4 class="text-center text-uppercase m-4">science Payload</h4>
+                    <Row>
+                        {
+                            science.map((link) =>
+                            <Col xs={4} className={link.class}>
+                                <div className="bg-white rounded shadow-sm py-3 px-4 mb-4">
+                                    <img src={link.img} className="img-fluid rounded"/>
+                                    <div className="text-center m-2"><b>{link.title}</b></div>
+                                </div>
+                            </Col>
+                            )
+                        }
+                        </Row>
+                        <Row>
+                            <Col xs={12}>
+                                <div className="py-3 px-4 mb-4">
+                                    <h5 class="text-center">The science payload consists of the probe and heat shield</h5>
+                                    <hr class="dashed"></hr>
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row>
+                            {
+                                heatsh.map((hs) =>
+                                <Col xs={5} className={hs.class}>
+                                    <div className="bg-white rounded shadow-sm py-3 px-4 mb-4">
+                                        <h6 class="text-center m-2">{hs.title}</h6>
+                                        <img src={hs.img} className="img-fluid rounded scienceimg"/>
+                                        <div className="text-center m-2"><p className="justify-content">{hs.text1}</p></div>
+                                        <div className="text-center m-2"><p className="justify-content">{hs.text2}</p></div>
+                                    </div>
+                                </Col>
+                                )
+                            }
+                            <Col xs={7}>
+                                <div className="bg-white rounded shadow-sm py-3 px-4 mb-4">
+                                    <Row>
+                                    {
+                                        probe.map((ps) =>
+                                            
+                                                <Col xs={6}>
+                                                    <h6 class="text-center m-2">{ps.title}</h6>
+                                                    <img src={ps.img} className="img-fluid rounded scienceimg"/>
+                                                </Col>
+                                            
+                                        )
+                                    }
+                                    </Row>
+                                    <div className="text-center m-2">
+                                        <p className="justify-content">
+                                        The probe plays the most important role in the CANSAT. After the science payload is deployed at 1500 meters, the probe in it collects the local weather data till it lands on the ground. The probe is also tasked with carrying a delicate egg without breaking it. After the probe reaches an altitude of 500 meters, the probe detaches from the heatshield and further descends at a rate of 5 m/s using a parachute.
+                                        </p>
+                                        <p className="justify-content">
+                                        Our probe’s chassis is supported by carbon spars; the base plates are made from ABS while the cover from PLA. All in all, the structure is built to withstand large forces to safely collect data and protect the egg.
+                                        </p>
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row>
+                            
+                        </Row>
 
                 </Container>
-            
+
             </div>
         );
     }
 }
-export default Carrierview ;
+export default Carrierview;
