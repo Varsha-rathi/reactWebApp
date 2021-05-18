@@ -17,7 +17,7 @@ class Carrierview extends React.Component {
 
         const transitionStyles = {
             entering: { opacity: 0, left: '0px' },
-            entered: { opacity: 1, left: '10%' }
+            entered: { opacity: 1, left: '5%' }
         };
 
         return (
