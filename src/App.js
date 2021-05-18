@@ -24,27 +24,27 @@ function App() {
         <Route
           path="/electricalcomp"
           component={Electricalcomp }
-          exact={Electricalcomp }
+          exact={true }
         />
         <Route
           path="/members"
           component={Members}
-          exact={Members }
+          exact={true }
         />
         <Route
           path="/carrierview"
           component={Carrierview }
-          exact={Carrierview }
+          exact={true }
         />
         <Route
           path="/payloadview"
           component={Payloadview }
-          exact={Payloadview }
+          exact={true }
         />
         <Route
           path="/mission"
           component={Mission }
-          exact={Mission }
+          exact={true }
         />
         <Route exact path="/model">
           <Redirect push to={"../model/index.html"} />
