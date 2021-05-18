@@ -4,7 +4,6 @@ import {wing} from "../constants/subsytemlist";
 
 class Wing extends React.Component {
     render() {
-        <h1 class="text-center text-uppercase">Wing </h1>
         const list = wing.map((link) =>
             <Col xs={12} className="mb-3">
                 <Card>
@@ -21,6 +20,7 @@ class Wing extends React.Component {
 
         return (
             <Row>
+            <h1 class="text-center text-uppercase">Wing </h1>
                 {list}
             </Row>
         );

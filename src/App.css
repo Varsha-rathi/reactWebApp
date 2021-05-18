@@ -55,14 +55,24 @@ hr.dashed {
 .homeslider img{
 	height: 100vh;
 }
-.carrier{
-  background :url('./assets/images/team/banner.jpg');
-}
+
 .electrical{
   background: url("./assets/images/project/ebanner.jpg");
   background-size: cover;
   padding: 10em !important;
 }
+.carrier{
+  background: url("./assets/images/project/carbanner.jpg");
+  background-size: cover;
+  padding: 10em !important;
+
+}
+.payload{
+  background: url("./assets/images/project/carbanner.jpg");
+  background-size: cover;
+  padding: 10em !important;
+}
+
 
 .para {text-align: justify;}
 .mission {

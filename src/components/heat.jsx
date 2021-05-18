@@ -4,7 +4,6 @@ import {heatdata} from "../constants/subsytemlist";
 
 class Heat extends React.Component {
     render() {
-        <h1 class="text-center text-uppercase">Heat Shield</h1>
         const list = heatdata.map((link) =>
             <Col xs={12} className="mb-3">
                 <Card>
@@ -22,6 +21,7 @@ class Heat extends React.Component {
 
         return (
             <Row>
+            <h1 class="text-center text-uppercase">Heat Shield</h1>
                 {list}
             </Row>
         );

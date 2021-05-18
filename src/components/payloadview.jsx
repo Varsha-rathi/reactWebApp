@@ -25,7 +25,7 @@ class Carrierview extends React.Component {
 
         return (
             <div>
-                <Jumbotron fluid className="page1">
+                <Jumbotron fluid className="payload">
                     <Container className="text-center">
                         <Transition in={true} timeout={duration} appear>
                             {(state) => (

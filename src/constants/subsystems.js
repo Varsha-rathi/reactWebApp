@@ -40,7 +40,7 @@ export const elecompaccess = [
     {
         "name" : 'DYS D2822 2600KV Outrunner Brushless Drone Motor',
         "icon" : "assets/images/project/DYS.jpg",
-        "text" : "This motor will be used during the powered flight to maintain the altitude and will be powered via the li ion cells."
+        "text" : "This DYS D2822 2600KV brushless outrunner motor specifically made to power Quadcopters and Multirotors. It is a 2600kV motor. It provides high performance, superpower, and brilliant efficiency. These motors are perfect for medium size quadcopters with 8 inches to 10-inch propellers.The motor comes with 3mm banana male connector attached which can be directly connected with 30A ESC without any soldering requirement.With a 3S LiPo battery, 30A ESC, and high efficiency 10″ propellers, these motors provide up to 800gms of thrust each. Using 4 of these motors on a quadcopter with orange propellers will give you a total of 3.2 kg thrust! Use this to build powerful and efficient quadcopters.This is a low price and excellent quality Brushless Motor.  It comes with Bullet Connectors already soldered."
     },
     {
         "name" : 'TowerPro SG92R Mini Servo 2.5kg / 9gm',
