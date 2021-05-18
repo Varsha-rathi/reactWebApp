@@ -12,7 +12,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.mission{
+.landing{
   background: url('./assets/images/home/rocket.gif');
   background-size: cover;
   margin-bottom: 0px !important;
@@ -79,4 +79,8 @@ hr.dashed {
   background: url("./assets/images/mission/banner.jpg");
   background-size: cover;
   padding: 30vh !important;
+}
+.videocs {
+  height: 55%;
+  width: 100%;
 }

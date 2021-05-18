@@ -1,6 +1,5 @@
 import React from 'react';
 import {Carousel, Jumbotron, Container, Row, Col} from 'react-bootstrap';
-
 import { Transition } from 'react-transition-group';
 
 class Landing extends React.Component {
@@ -39,7 +38,7 @@ class Landing extends React.Component {
                     </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-                <Jumbotron fluid className="mission">
+                <Jumbotron fluid className="landing">
                     <Container className="text-center">
                     <Row>
                         <Col>
@@ -57,6 +56,17 @@ class Landing extends React.Component {
                                                 <h6 class="text-center text-uppercase">Overview</h6>
                                                 <hr class="dashed"></hr>
                                                 Much like Semantic UI, you can use Bootstrap — a great responsive mobile-first CSS framework — to build an aesthetically pleasing app in much less time than if you would write your own CSS. We want components, grids and pretty buttons after all!
+
+                                                <Row className="mt-3 p-3">
+                                                    <Col xs={6}>
+                                                        <img src={'./assets/images/home/1.jpg'} className="img-fluid rounded"/>
+                                                    </Col>
+                                                    <Col xs={6}>
+                                                        <video className="videocs" controls>
+                                                            <source src={'./assets/video/animation.mp4'} type="video/mp4"></source>
+                                                        </video>
+                                                    </Col>
+                                                </Row>
                                             </div>
                                         </Col>
                                     )}
@@ -68,6 +78,8 @@ class Landing extends React.Component {
                     </Container>
 
                 </Jumbotron>
+                
+                <br/>
                 
             </div>
         );

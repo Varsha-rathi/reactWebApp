@@ -1,6 +1,6 @@
 import React from "react";
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch,Redirect } from 'react-router-dom';
 import Landing from './components/landing';
 import Subsystems from './components/carrierview';
 import Header from './core/header';
@@ -46,7 +46,9 @@ function App() {
           component={Mission }
           exact={Mission }
         />
-        
+        <Route exact path="/model">
+          <Redirect push to={"../model/index.html"} />
+        </Route> 
       </Switch>
       <Footer />
     </Router>

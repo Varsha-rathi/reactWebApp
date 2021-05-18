@@ -17,6 +17,7 @@ class Header extends React.Component {
                 <Nav className="mr-auto">
                     <Nav.Link href="/">Home</Nav.Link>
                     <Nav.Link href="/mission">Mission</Nav.Link>
+                    <Nav.Link href="/model">Model</Nav.Link>
                     <NavDropdown title="Subsystems" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="/electricalcomp">Electrical Component</NavDropdown.Item>
                         <NavDropdown.Item href="/carrierview">Carrier Subsystem Design </NavDropdown.Item>
