@@ -2,17 +2,17 @@ export const elecomp = [
     {
         "name" : 'BMP280 (Location- carrier and payload)',
         "icon" : "assets/images/project/BMP280.jpeg",
-        "text" : "This servo motor will be used to release the payload from the carrier, release the heatshield from the payload and to also deploy the parachute. Also, it will be used to control the tail of the carrier to change directions and perform helical manoeuvre."
+        "text" : "BMP280  is a high precision sensor module that measures the atmospheric pressure and temperature in air. Not only this, but it can also measure humidity in the air. This six-pin module supports both SPI and I2C interfaces. It uses a BMP280 barometric pressure sensor. These sensors are pre-calibrated, unlike other sensors. Therefore, they start measuring temperature, pressure, and humidity instantly after powering them. You don’t need extra components for its calibration or operation."
     },
     {
         "name" : 'MPU9250 (Location – carrier)',
         "icon" : "assets/images/project/MPU9250.jpg",
-        "text" : "This servo motor will be used to release the payload from the carrier, release the heatshield from the payload and to also deploy the parachute. Also, it will be used to control the tail of the carrier to change directions and perform helical manoeuvre."
+        "text" : "The MPU9250 integrates an accelerometer, a gyroscope, and a magnetometer into a single small package. The MPU9250 has the needed pull-up and pull-down resistors for the I2C/SPI lines and the address select and the frame synchronization pin."
     },
     {
         "name" : 'NEO-M8N (GPS) (Location – carrier)',
         "icon" : "assets/images/project/neo.jpg",
-        "text" : "This servo motor will be used to release the payload from the carrier, release the heatshield from the payload and to also deploy the parachute. Also, it will be used to control the tail of the carrier to change directions and perform helical manoeuvre."
+        "text" : "NEO-M8 Series GNSS Modules provide high sensitivity and minimal acquisition times while maintaining low system power. These GNSS modules are built on the high performing u-blox M8 GNSS engine in the industry proven NEO form factor. The NEO-M8 modules support the augmentation of QZSS, GAGAN, and IMES together with WAAS, EGNOS, and MSAS. These modules use GNSS chips qualified according to AEC-Q100, manufactured in ISO/TS 16949 certified sites, and fully tested on a system level. The NEO-M8 modules also support message integrity protection, geofencing, and spoofing detection with configurable interface settings."
     },
     {
         "name" : 'MPX7002DP (Location – payload)',
@@ -55,16 +55,16 @@ export const elecompaccess = [
     {
         "name" : 'Buzzer',
         "icon" : "assets/images/project/BUZZER.jpg",
-        "text" : "This ESC will be used to control the motor via Arduino nano during the powered flight"
+        "text" : "A 5V Active Alarm Buzzer Module for Arduino is an audio signaling device, which may be mechanical, electromechanical, or piezoelectric. Just like what you are viewing now, it is 5V DC Electronic Part Active Buzzer Module. Using top quality material, it is durable in use.What is more, an active buzzer rings out as long as it is electrified. Compared with a passive buzzer, it is a bit expensive but easier to control. Typical uses of buzzers include alarm devices, timers, and confirmation of user input such as a mouse click or keystroke."
     }
 ];
 export const pcb = [
     {
-        "name" : "payload pcb",
+        "name" : "Payload PCB",
         "icon" : "assets/images/project/payloadpcb.jpeg"
     },
     {
-        "name" : 'carrier pcb',
+        "name" : 'Carrier PCB',
         "icon" : "assets/images/project/carrierpcb.jpeg",
         
     }

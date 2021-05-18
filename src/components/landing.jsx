@@ -39,7 +39,7 @@ class Landing extends React.Component {
                     </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-                <Jumbotron fluid className="mission">
+                <Jumbotron fluid className="landing">
                     <Container className="text-center">
                     <Row>
                         <Col>

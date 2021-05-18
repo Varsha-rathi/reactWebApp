@@ -127,7 +127,7 @@ class Electricalcomp extends React.Component {
                                                     <Row>
                                                     {
                                                         elecompaccess.map((link) =>
-                                                            <Col xs={3} className="mb-3 d-flex" noGutters={true}>
+                                                            <Col xs={6} className="mb-3 d-flex" noGutters={true}>
                                                                 <Card className="flex-fill subcardimg">
                                                                     <Card.Img variant="top" src={link.icon} className="img-fluid"/>
                                                                     <Card.Body>

@@ -12,7 +12,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.mission{
+.landing{
   background: url('./assets/images/home/rocket.gif');
   background-size: cover;
   margin-bottom: 0px !important;
