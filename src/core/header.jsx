@@ -7,7 +7,7 @@ class Header extends React.Component {
             <Navbar bg="dark" variant="dark" fixed="top" >
                 <Navbar.Brand href="/">
                 <img
-                    src="../assets/images/home/logo.png"
+                    src={'assets/images/home/logo.png'}
                     width="90"
                     height="40"
                     className="d-inline-block align-top"
@@ -15,9 +15,9 @@ class Header extends React.Component {
                 />
                 </Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Nav.Link href="/home">Home</Nav.Link>
+                    <Nav.Link href="/">Home</Nav.Link>
                     <Nav.Link href="/mission">Mission</Nav.Link>
-                    <Nav.Link href="/model">Model</Nav.Link>
+                    <Nav.Link href="/reactWebApp/model">Model</Nav.Link>
                     <NavDropdown title="Subsystems" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="/electricalcomp">Electrical Component</NavDropdown.Item>
                         <NavDropdown.Item href="/carrierview">Carrier Subsystem Design </NavDropdown.Item>

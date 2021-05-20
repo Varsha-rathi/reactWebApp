@@ -17,7 +17,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact
-          path="/home"
+          path="/"
           component={Landing}
         />
         <Route
@@ -45,9 +45,9 @@ function App() {
           component={Mission }
           exact={true }
         />
-        <Route exact path="/model">
-          <Redirect push to={"../model/index.html"} />
-        </Route> 
+        {/* <Route exact path="/model">
+          <Redirect push to={"/index.html"} />
+        </Route>  */}
       </Switch>
       <Footer />
     </Router>
