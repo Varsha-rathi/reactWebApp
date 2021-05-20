@@ -14,7 +14,7 @@ import Mission from "./components/mission";
 function App() {
   return (
     
-    <Router>
+    <div>
       <Header />
       <Switch>
         <Route exact
@@ -51,7 +51,7 @@ function App() {
         </Route> 
       </Switch>
       <Footer />
-    </Router>
+    </div>
   );
 }
 

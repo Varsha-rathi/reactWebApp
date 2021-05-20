@@ -1,5 +1,6 @@
 import React from 'react';
-import {Nav, Navbar, Button, NavDropdown} from 'react-bootstrap';
+import {Nav, Navbar, NavDropdown} from 'react-bootstrap';
+import { Link } from 'react-router-dom'
 
 class Header extends React.Component {
     render() {
@@ -7,7 +8,7 @@ class Header extends React.Component {
             <Navbar bg="dark" variant="dark" fixed="top" >
                 <Navbar.Brand href="/">
                 <img
-                    src="../assets/images/logo/teamA.jpeg"
+                    src={'assets/images/home/logo.png'}
                     width="90"
                     height="40"
                     className="d-inline-block align-top"
@@ -15,16 +16,15 @@ class Header extends React.Component {
                 />
                 </Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/mission">Mission</Nav.Link>
-                    <Nav.Link href="/model">Model</Nav.Link>
+                    <Link to="/" className="nav-link">Home</Link>
+                    <Link to="/mission" className="nav-link">Mission</Link>
+                    <Nav.Link href="/reactWebApp/model">Model</Nav.Link>
                     <NavDropdown title="Subsystems" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="/electricalcomp">Electrical Component</NavDropdown.Item>
-                        <NavDropdown.Item href="/carrierview">Carrier Subsystem Design </NavDropdown.Item>
-                        <NavDropdown.Item href="/payloadview">Science Payload design</NavDropdown.Item>
+                        <Link to="/electricalcomp" className="dropdown-item">Electrical Component</Link>
+                        <Link to="/carrierview" className="dropdown-item">Carrier Subsystem Design</Link>
+                        <Link to="/payloadview" className="dropdown-item">Science Payload design</Link>
                     </NavDropdown>
-                    <Nav.Link href="/members">Team Members</Nav.Link>
-
+                    <Link to="/members" className="nav-link">Team Members</Link>
                 </Nav>
             </Navbar>
         );

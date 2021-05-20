@@ -22,7 +22,7 @@ class Carrier extends React.Component {
 
         return (
             <Row>
-             <h1 class="text-center text-uppercase">Carrier</h1>
+             <h1 className="text-center text-uppercase">Carrier</h1>
                 {list}
             </Row>
         );

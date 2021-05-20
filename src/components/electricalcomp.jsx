@@ -52,7 +52,7 @@ class Electricalcomp extends React.Component {
                                                 <p className="p-4 justify-content ">The Arduino Nano is a small, complete, and breadboard-friendly board based on the ATmega328 (Arduino Nano 3.x). It has more or less the same functionality of the Arduino Duemilanove, but in a different package. It lacks only a DC power jack, and works with a Mini-B USB cable instead of a standard one.</p>
                                             </Col>
                                             <Col xs={4}>
-                                                <img src={'./assets/images/project/arduino.jpg'} />
+                                                <img alt="image" src={'./assets/images/project/arduino.jpg'} />
                                             </Col>
 
                                         </Row>
@@ -70,7 +70,7 @@ class Electricalcomp extends React.Component {
                                             <div className="carousel-item">
                                                 <Row className="border m-2 p-4">
                                                     <Col xs={3}>
-                                                        <img src={link.icon} className="float-right" />
+                                                        <img alt="image" src={link.icon} className="float-right" />
                                                     </Col>
                                                     <Col xs={8}>
                                                         <h5 className="p-2">{link.name}</h5>
@@ -95,7 +95,7 @@ class Electricalcomp extends React.Component {
                                             <Col xs={6} className="mb-3 d-flex">
                                                 <Row className="border m-2">
                                                     <Col xs={4} className="p-2 rounded mt-4">
-                                                        <img src={link.icon} />
+                                                        <img alt="image" src={link.icon} />
                                                     </Col>
                                                     <Col xs={8}>
                                                         <h6 className="p-2">{link.name}</h6>

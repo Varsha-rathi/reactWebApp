@@ -22,7 +22,7 @@ class Teamview extends React.Component {
         const listItems = members.map((data) => {
             return(
                 <Col xs={12} className="col-12 border rounded p-3">
-                    <div class="text-center mb-3">
+                    <div className="text-center mb-3">
                         <h2>{data.title}</h2>
                     </div>
                     <Row>
@@ -41,7 +41,7 @@ class Teamview extends React.Component {
                     transition: `${delay}ms ease-in`
                 }}>
                     <div className="bg-white rounded shadow-sm py-5 px-4 flex-fill img-hover-zoom--quick-zoom">
-                        <img src={link.img} className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
+                        <img alt="images"  src={link.img} className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
                         <h5 className="mb-0">{link.name}</h5>
                         <span className="small text-uppercase text-muted">{link.number}</span>
                         <ul className="social mb-0 list-inline mt-3">

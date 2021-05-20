@@ -4,14 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-// import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import './assets/css/responsive.css';
 import './assets/css/style.css';
 
 ReactDOM.render(
-  <div>
+  <HashRouter>
     <App />
-  </div>,
+  </HashRouter>,
   document.getElementById("root")
 );
 
