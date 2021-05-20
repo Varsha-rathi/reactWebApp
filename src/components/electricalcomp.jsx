@@ -13,8 +13,8 @@ class Electricalcomp extends React.Component {
         };
 
         const transitionStyles = {
-            entering: { opacity: 0 },
-            entered: { opacity: 1 }
+            entering: { opacity: 0 ,left:"0px"},
+            entered: { opacity: 1 ,left:"10%"}
         };
 
         return (
@@ -29,7 +29,7 @@ class Electricalcomp extends React.Component {
                                         ...transitionStyles[state]
                                     }}
                                 >
-                                    <h3>Electrical Component Subsystem</h3>
+                                    <h3 className="p-5 bg-light shadow-lg border border-dark rounded-pill">Electrical Component Subsystem</h3>
                                 </div>
                             )}
                         </Transition>
@@ -40,7 +40,7 @@ class Electricalcomp extends React.Component {
                     <Row>
 
                         <Col xl={12} xs={12} className="border rounded p-3 mb-3">
-                            <div className="bg-white rounded shadow-sm py-3 px-4 mb-4">
+                            <div className="bg-white rounded shadow-lg py-3 px-4 mb-4">
                                 <h4 className="text-center text-uppercase">Microcontroller </h4>
                                 <hr className="dashed"></hr>
                                 <Row>
@@ -49,7 +49,7 @@ class Electricalcomp extends React.Component {
                                         <Row className="border m-2 p-4">
                                             <Col xs={8} className="p-2">
                                                 <h5 className="pl-4 pb-3 ">Arduino nano</h5>
-                                                <p className="p-4 justify-content">The Arduino Nano is a small, complete, and breadboard-friendly board based on the ATmega328 (Arduino Nano 3.x). It has more or less the same functionality of the Arduino Duemilanove, but in a different package. It lacks only a DC power jack, and works with a Mini-B USB cable instead of a standard one.</p>
+                                                <p className="p-4 justify-content ">The Arduino Nano is a small, complete, and breadboard-friendly board based on the ATmega328 (Arduino Nano 3.x). It has more or less the same functionality of the Arduino Duemilanove, but in a different package. It lacks only a DC power jack, and works with a Mini-B USB cable instead of a standard one.</p>
                                             </Col>
                                             <Col xs={4}>
                                                 <img src={'./assets/images/project/arduino.jpg'} />
@@ -60,7 +60,7 @@ class Electricalcomp extends React.Component {
                                 </Row>
                             </div>
 
-                            <div className="bg-white rounded shadow-sm py-3 px-4 mb-4">
+                            <div className="bg-white rounded shadow-lg py-3 px-4 mb-4">
                                 <h4 className="text-center text-uppercase">Sensor Subsystem</h4>
                                 <hr className="dashed"></hr>
                                 <Carousel id="multi-item-example">
@@ -86,7 +86,7 @@ class Electricalcomp extends React.Component {
 
                             </div>
 
-                            <div className="bg-white rounded shadow-sm py-3 px-4 mb-4">
+                            <div className="bg-white rounded shadow-lg py-3 px-4 mb-4">
                                 <h4 className="text-center text-uppercase">Batteries </h4>
                                 <hr className="dashed"></hr>
                                 <Row>
@@ -108,14 +108,14 @@ class Electricalcomp extends React.Component {
                                 </Row>
                             </div>
 
-                            <div className="bg-white rounded shadow-sm py-3 px-4 mb-4">
+                            <div className="bg-white rounded py-3 px-4 mb-4">
                                 <h4 className="text-center text-uppercase">Actuator</h4>
                                 <hr className="dashed"></hr>
                                 <Row>
                                     {
                                         elecompaccess.map((link) =>
                                             <Col xs={6} className="mb-3 d-flex">
-                                                <Card className="flex-fill subcardimg">
+                                                <Card className="flex-fill subcardimg shadow-lg">
                                                     <Card.Img variant="top" src={link.icon} className="img-fluid" />
                                                     <Card.Body>
                                                         <Card.Title>{link.name}</Card.Title>
@@ -127,15 +127,15 @@ class Electricalcomp extends React.Component {
                                     }
                                 </Row>
                             </div>
-                            <div className="bg-white rounded shadow-sm py-3 px-4 mb-4">
+                            <div className="bg-white rounded  py-3 px-4 mb-4">
                                 <h4 className="text-center text-uppercase">PCB design</h4>
                                 <hr className="dashed"></hr>
                                 <Row>
                                     {
                                         pcb.map((link) =>
-                                            <Col xs={6} className="mb-3 d-flex">
+                                            <Col xs={6} className="mb-3 d-flex shadow-lg">
                                                 <Card className="flex-fill subcardimg">
-                                                    <Card.Img variant="top" src={link.icon} className="img-fluid" />
+                                                    <Card.Img variant="top" src={link.icon} className="img-fluid"  />
                                                     <Card.Body>
                                                         <Card.Title className="text-center">{link.name}</Card.Title>
                                                     </Card.Body>

@@ -32,7 +32,7 @@ const members=[
             {
                 name: "Girish Balaji",
                 number:"8825541766",
-                img:"assets/images/home/c1.jpg"
+                img:"assets/images/home/c1.jpeg"
             },
             {
                 name: "Mansha Gandhi",
@@ -46,9 +46,9 @@ const members=[
         class:"",
         list:[
             {
-                name: "Aniruddh",
+                name: "Aniruddh Pandey",
                 number:"9860834041",
-                img:"assets/images/home/c1.jpg"
+                img:"assets/images/home/e1.jpeg"
             }
         ]
     }

@@ -21,10 +21,6 @@ class Landing extends React.Component {
                         src={'assets/images/home/rocket1.jpg'}
                         alt="First slide"
                     />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                     <img
@@ -32,10 +28,6 @@ class Landing extends React.Component {
                         src={'assets/images/home/rocket-launch-693192_1280.jpg'}
                         alt="Second slide"
                     />
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
                 <Jumbotron fluid className="landing">
@@ -70,13 +62,17 @@ class Landing extends React.Component {
                                                 <li>The carrier, heatshield, probe and the egg should be located and retrieved.</li>
                                                 <li>The data received should be plotted in real time and recorded in the ground station.</li>
                                                 </p>
+                                                </div>
+                                                <br />
+                                                <div className="bg-white rounded shadow-sm py-5 px-4">
 
 
-                                                <Row className="mt-3 p-3">
-                                                    <Col xs={6}>
-                                                        <img src={'./assets/images/home/1.jpg'} className="img-fluid rounded"/>
+                                                <Row className="mt-4 p-3">
+                                                    <Col xs={12}>
+                                                    <h6 className="text-center text-uppercase">CONOPS</h6>
+                                                        <img src={'./assets/images/home/conops.jpeg'} height="60%" width="100%" className="p-4 shadow-lg m-3 border border-dark"/>
                                                     </Col>
-                                                    <Col xs={6}>
+                                                    <Col xs={12}>
                                                         <video className="videocs" controls>
                                                             <source src={'./assets/video/animation.mp4'} type="video/mp4"></source>
                                                         </video>

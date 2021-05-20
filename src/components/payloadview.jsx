@@ -17,7 +17,7 @@ class Carrierview extends React.Component {
 
         const transitionStyles = {
             entering: { opacity: 0, left: '0px' },
-            entered: { opacity: 1, left: '5%' }
+            entered: { opacity: 1, left: '10%' }
         };
 
         return (
@@ -57,6 +57,7 @@ class Carrierview extends React.Component {
                             )
                         }
                     </Row>
+                
                     <Row>
                         <Col xs={12}>
                             <div className="py-3 px-4 mb-4">
@@ -65,8 +66,8 @@ class Carrierview extends React.Component {
                             </div>
                         </Col>
                     </Row>
-                    <Row>
-                        <div className="bg-white rounded shadow-sm py-3 px-4 mb-4">
+                                <Row>
+                        <div className="bg-white rounded shadow-lg py-3 px-4 mb-4">
                             {
                                 heatsh.map((hs) =>
                                     <Col xs={12} className={hs.class}>
@@ -78,7 +79,7 @@ class Carrierview extends React.Component {
                                 )
                             }
                         </div>
-                    </Row>
+                        </Row>
                     <Row>
                         <div className="bg-white rounded shadow-sm py-3 px-4 mb-4">
                             <Col xs={12}>
@@ -95,7 +96,7 @@ class Carrierview extends React.Component {
                                         )
                                     }
                                 </Row>
-                                <div className="text-center m-2">
+                                <div className="text-center m-2 shadow-lg ">
                                     <p className="justify-content p-4">
                                         The probe plays the most important role in the CANSAT. After the science payload is deployed at 1500 meters, the probe in it collects the local weather data till it lands on the ground. The probe is also tasked with carrying a delicate egg without breaking it. After the probe reaches an altitude of 500 meters, the probe detaches from the heatshield and further descends at a rate of 5 m/s using a parachute.
                                         </p>

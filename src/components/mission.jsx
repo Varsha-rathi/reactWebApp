@@ -30,11 +30,11 @@ class Mission extends React.Component {
                                         ...transitionStyles[state],
                                         transition: `900ms ease-in`
                                     }}>
-                                        <Card className="flex-fill">
+                                        <Card className="flex-fill shadow-lg">
                                             <Card.Body>
                                                 <Card.Title><h6 class="text-center text-uppercase">{data.title}</h6><hr class="dashed"></hr></Card.Title>
                                                 <Card.Text>
-                                                    <p class="para">{data.text}</p>
+                                                    <p className="para">{data.text}</p>
                                                 </Card.Text>
                                             </Card.Body>
                                         </Card>

@@ -7,7 +7,7 @@ class Header extends React.Component {
             <Navbar bg="dark" variant="dark" fixed="top" >
                 <Navbar.Brand href="/">
                 <img
-                    src="../assets/images/home/logo.png"
+                    src="../assets/images/logo/teamA.jpeg"
                     width="90"
                     height="40"
                     className="d-inline-block align-top"
