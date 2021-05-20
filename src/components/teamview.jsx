@@ -7,7 +7,6 @@ import { Transition } from 'react-transition-group';
 class Teamview extends React.Component {
     render() {
         let duration = 800;
-        let delay = 800;
 
         const defaultStyle = {
             opacity: 0
