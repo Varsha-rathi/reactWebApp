@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav, Navbar, Button, NavDropdown} from 'react-bootstrap';
+import {Nav, Navbar, NavDropdown} from 'react-bootstrap';
 
 class Header extends React.Component {
     render() {
@@ -15,7 +15,7 @@ class Header extends React.Component {
                 />
                 </Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link href="/home">Home</Nav.Link>
                     <Nav.Link href="/mission">Mission</Nav.Link>
                     <Nav.Link href="/model">Model</Nav.Link>
                     <NavDropdown title="Subsystems" id="collasible-nav-dropdown">

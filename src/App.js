@@ -2,7 +2,6 @@ import React from "react";
 import './App.css';
 import { BrowserRouter as Router, Route, Switch,Redirect } from 'react-router-dom';
 import Landing from './components/landing';
-import Subsystems from './components/carrierview';
 import Header from './core/header';
 import Footer from './core/footer';
 import Members from "./components/members";
@@ -18,7 +17,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact
-          path="/"
+          path="/home"
           component={Landing}
         />
         <Route

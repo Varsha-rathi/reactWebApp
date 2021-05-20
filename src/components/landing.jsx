@@ -74,7 +74,7 @@ class Landing extends React.Component {
 
                                                 <Row className="mt-3 p-3">
                                                     <Col xs={6}>
-                                                        <img src={'./assets/images/home/1.jpg'} className="img-fluid rounded"/>
+                                                        <img alt="images"  src={'./assets/images/home/1.jpg'} className="img-fluid rounded"/>
                                                     </Col>
                                                     <Col xs={6}>
                                                         <video className="videocs" controls>

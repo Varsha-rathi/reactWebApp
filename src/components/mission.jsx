@@ -1,5 +1,5 @@
 import React from 'react';
-import {Carousel, Jumbotron, Container, Row, Col, Card} from 'react-bootstrap';
+import {Jumbotron, Container, Row, Col, Card} from 'react-bootstrap';
 import missionconst from '../constants/missiondata';
 
 import { Transition } from 'react-transition-group';

@@ -50,7 +50,7 @@ class Carrierview extends React.Component {
                             science.map((link) =>
                                 <Col xs={4} className={link.class}>
                                     <div className="bg-white rounded shadow-sm py-3 px-4 mb-4">
-                                        <img src={link.img} className="img-fluid rounded" />
+                                        <img alt="images"  src={link.img} className="img-fluid rounded" />
                                         <div className="text-center m-2"><b>{link.title}</b></div>
                                     </div>
                                 </Col>
@@ -71,7 +71,7 @@ class Carrierview extends React.Component {
                                 heatsh.map((hs) =>
                                     <Col xs={12} className={hs.class}>
                                         <h6 class="text-center m-2">{hs.title}</h6>
-                                        <img src={hs.img} className="img-fluid rounded heatimg" />
+                                        <img alt="images"  src={hs.img} className="img-fluid rounded heatimg" />
                                         <div className="text-center m-2 p-4"><p className="justify-content">{hs.text1}</p></div>
                                         <div className="text-center m-2"><p className="justify-content">{hs.text2}</p></div>
                                     </Col>
@@ -89,7 +89,7 @@ class Carrierview extends React.Component {
 
                                             <Col xs={4} className={ps.class}>
                                                 <h6 class="text-center m-2">{ps.title}</h6>
-                                                <img src={ps.img} className="img-fluid rounded scienceimg" />
+                                                <img alt="images"  src={ps.img} className="img-fluid rounded scienceimg" />
                                             </Col>
 
                                         )
