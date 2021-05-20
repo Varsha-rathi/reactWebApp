@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/reactWebApp/static/css/main.c12bce05.chunk.css",
+    "main.js": "/reactWebApp/static/js/main.4db700b9.chunk.js",
+    "main.js.map": "/reactWebApp/static/js/main.4db700b9.chunk.js.map",
+    "runtime-main.js": "/reactWebApp/static/js/runtime-main.179bbb69.js",
+    "runtime-main.js.map": "/reactWebApp/static/js/runtime-main.179bbb69.js.map",
+    "static/css/2.ef9168ec.chunk.css": "/reactWebApp/static/css/2.ef9168ec.chunk.css",
+    "static/js/2.0b9560d2.chunk.js": "/reactWebApp/static/js/2.0b9560d2.chunk.js",
+    "static/js/2.0b9560d2.chunk.js.map": "/reactWebApp/static/js/2.0b9560d2.chunk.js.map",
+    "static/js/3.5a9c58b6.chunk.js": "/reactWebApp/static/js/3.5a9c58b6.chunk.js",
+    "static/js/3.5a9c58b6.chunk.js.map": "/reactWebApp/static/js/3.5a9c58b6.chunk.js.map",
+    "index.html": "/reactWebApp/index.html",
+    "static/css/2.ef9168ec.chunk.css.map": "/reactWebApp/static/css/2.ef9168ec.chunk.css.map",
+    "static/css/main.c12bce05.chunk.css.map": "/reactWebApp/static/css/main.c12bce05.chunk.css.map",
+    "static/js/2.0b9560d2.chunk.js.LICENSE.txt": "/reactWebApp/static/js/2.0b9560d2.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/reactWebApp/static/media/fontawesome-webfont.eb68809f.ttf",
+    "static/media/App.css": "/reactWebApp/static/media/rocket.a47ab895.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.179bbb69.js",
+    "static/css/2.ef9168ec.chunk.css",
+    "static/js/2.0b9560d2.chunk.js",
+    "static/css/main.c12bce05.chunk.css",
+    "static/js/main.4db700b9.chunk.js"
+  ]
+}
